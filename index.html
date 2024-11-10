@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lab2</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td {
+        width: 180px;
+        height: 30px;
+        font-size: 25px;
+      }
+
+      tr:nth-child(1) {
+        background-color: #228f8f;
+        color: #120b01;
+      }
+
+      tr:nth-child(2) {
+        background-color: #f5f522;
+        color: #595959;
+      }
+
+      tr:nth-child(1):hover {
+        background-color: #120b01;
+        color: #228f8f;
+      }
+
+      tr:nth-child(2):hover {
+        background-color: #595959;
+        color: #f5f522;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td rowspan="3">Кругляк</td>
+        <td>Артем</td>
+        <td rowspan="3">Ігорович</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ІО-25</td>
+        <td>ЛР-2, варіант 2</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <div class="flag-container">
+      <div class="flag flag-position"></div>
+
+      <div class="flag flag-transform"></div>
+    </div>
+  </body>
+</html>

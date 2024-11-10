@@ -1,0 +1,59 @@
+.flag {
+  width: 200px;
+  height: 200px;
+  background-color: #d52b1e;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.flag-position::before,
+.flag-position::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.flag-position::before {
+  width: 40px;
+  height: 120px;
+  left: 80px;
+  top: 40px;
+}
+
+.flag-position::after {
+  width: 120px;
+  height: 40px;
+  left: 40px;
+  top: 80px;
+}
+
+.flag-transform::before,
+.flag-transform::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.flag-transform::before {
+  width: 40px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flag-transform::after {
+  width: 120px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.flag-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
